@@ -1,5 +1,9 @@
 $(document).ready(function() {
-
+$(document).ready(function(){
+    $('#menu').click(function(){
+        $(this).toggleClass('fa-times');
+        $('header').toggleClass('toggle');
+    });
   //sticky header
     $(window).scroll(function() {
       if ($(this).scrollTop() > 1) {
